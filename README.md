@@ -107,11 +107,12 @@ Abaixo estão algumas capturas de tela que demonstram o funcionamento do sistema
 ---
 
 ## Autores
-**[Gabriel Nunes Rego](https://github.com/gabrielnr-git)**  
+**Gabriel Nunes Rego**  
 Responsável pelo desenvolvimento completo do sistema, incluindo arquitetura, implementação de funcionalidades, banco de dados e lógica back-end/front-end.
 
 **Lucas Lopis Fonseca**  
 Responsável pela documentação do projeto original (TCC), incluindo plano de negócios, especificação técnica e descrição funcional.
+
 
 
 
