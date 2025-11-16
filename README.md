@@ -1,4 +1,4 @@
-# ![Imobilar](public\assets\images\header\logo-white.png)
+# ![Imobilar](public/assets/images/header/logo-white.png)
 
 ## Sobre o projeto
 Este projeto foi desenvolvido em 2023 como Trabalho de Conclusão de Curso (TCC) do Ensino Médio Técnico em Informática para a escola "Centro de Educação Profissional Tancredo Neves" em Brazópolis, Minas Gerais.
@@ -112,6 +112,7 @@ Responsável pelo desenvolvimento completo do sistema, incluindo arquitetura, im
 
 **Lucas Lopis Fonseca**  
 Responsável pela documentação do projeto original (TCC), incluindo plano de negócios, especificação técnica e descrição funcional.
+
 
 
 
