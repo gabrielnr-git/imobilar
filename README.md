@@ -58,51 +58,51 @@ define("SMTPPORT",465);
 Abaixo estão algumas capturas de tela que demonstram o funcionamento do sistema, tanto para usuários comuns quanto para administradores.
 
 ### Página Inicial
-!["Página inicial"]("screenshots/front-page.png")
+![Página inicial](screenshots/front-page.png)
 
 ---
 
 ### Cadastro 
-!["Página de cadastro"]("screenshots/sign-up.png")
+![Página de cadastro](screenshots/sign-up.png)
 
 ### Login
-!["Página de login"]("screenshots/login.png")
+![Página de login](screenshots/login.png)
 
 ---
 
 ### Perfil do Usuário
-!["Página do perfil do usuário"]("screenshots/profile.png")
+![Página do perfil do usuário](screenshots/profile.png)
 
 ---
 
 ### Lista de Moradias
-!["Página que lista as moradias disponiveis"]("screenshots/house-list.png")
+![Página que lista as moradias disponiveis](screenshots/house-list.png)
 
 ### Detalhes da Moradia
-!["Página que exibe os detalhes de uma moradia"]("screenshots/house-details.png")
+![Página que exibe os detalhes de uma moradia](screenshots/house-details.png)
 
 ---
 
 ### Favoritos
-!["Página que exibe as moradias favoritadas pelo usuário"]("screenshots/favourites.png")
+![Página que exibe as moradias favoritadas pelo usuário](screenshots/favourites.png)
 
 ---
 
 ### Notificações
-!["Página de notificações do usuário"]("screenshots/notifications.png")
+![Página de notificações do usuário](screenshots/notifications.png)
 
 ---
 
 ### Publicar Nova Moradia
-!["Página de publicação de uma moradia"]("screenshots/publish-house.png")
+![Página de publicação de uma moradia](screenshots/publish-house.png)
 
 ### Minhas Publicações
-!["Página de publicações do usuário"]("screenshots/my-publications.png")
+![Página de publicações do usuário](screenshots/my-publications.png)
 
 ---
 
 ### Painel do Administrador
-!["Página do painel do administrador"]("screenshots/admin-page.png")
+![Página do painel do administrador](screenshots/admin-page.png)
 
 ---
 
@@ -112,5 +112,6 @@ Responsável pelo desenvolvimento completo do sistema, incluindo arquitetura, im
 
 **Lucas Lopis Fonseca**  
 Responsável pela documentação do projeto original (TCC), incluindo plano de negócios, especificação técnica e descrição funcional.
+
 
 
