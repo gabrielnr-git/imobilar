@@ -1,0 +1,328 @@
+.login{
+    width: 100vw;
+    height: fit-content;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 35px;
+    font-size: 1.4rem;
+}
+.login-form{
+    width: 35%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px 30px 30px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.1);
+}
+.login-form .message{
+    position: absolute;
+    align-self: center;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+.login-form h2{
+    font-size: 2.6rem;
+    color: var(--blueColor);
+    margin: 70px 0;
+}
+.login-form section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+}
+.login-form section div{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.login-form small{
+    width: fit-content;
+    height: fit-content;
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-size: 1rem;
+    color: red;
+}
+#pwd_img_login{
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    height: 30px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 5px;
+    user-select: none;
+}
+.login-form section input{
+    width: 100%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    padding: 7px 3px 7px 28px;
+}
+.login-form section input:focus{
+    border-bottom: 2px solid #0060DF;
+}
+.login-form button{
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.5rem;
+    background-color: var(--blueColor);
+    color: white;
+    padding: 7px 30px;
+    border-radius: 100px;
+    margin-top: 40px;
+}
+@media (pointer: fine){
+    .login-form button:hover{
+        cursor: pointer;
+        transition: all 0.2s;
+        background-color: var(--redColor);
+    }
+}
+.input_username{
+    background-image: var(--user_input_img);
+}
+.input_email{
+    background-image: var(--email_input_img);
+}
+.input_password{
+    background-image: var(--pwd_input_img);
+}
+.input_username,.input_email,.input_password{
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: left;
+}
+#input_password_login{
+    padding: 7px 40px 7px 28px;
+}
+.login-form label{
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.3rem;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    margin-top: 33px;
+    cursor: pointer;
+    user-select: none;
+}
+.login-form input[type=checkbox]{
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--blueColor);
+    user-select: none;
+}
+.login-form input[type=checkbox]:checked{
+    background-image: var(--check_input_img);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.login-form a{
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    font-size: 1rem;
+    color: var(--blueColor);
+    margin-top: 5px;
+}
+@media (pointer: fine){
+    .login-form a:hover{
+        transition: all 0.2s;
+        color: var(--redColor);
+    }
+}
+.login-form p{
+    font-size: 1rem;
+    margin-top: 20px;
+}
+.login-form p a{
+    cursor: pointer;
+    color: var(--blueColor);
+    border-bottom: 2px solid var(--blueColor);
+    user-select: none;
+}
+@media (pointer: fine){
+    .login-form p a:hover{
+        transition: all 0.2s;
+        color: var(--redColor);
+        border-bottom: 2px solid var(--redColor);
+    }
+}
+/*------------------------------------------------------------------*/
+.recuperar{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.recuperar-form{
+    width: 39%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.1);
+    padding: 70px 0 0 0;
+}
+.recuperar-form p{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+    font-size: 1.4rem;
+    color: var(--blueColor);
+}
+.recuperar-form span{
+    width: fit-content;
+    height: fit-content;
+    color: rgba(0, 0, 0, 0.8);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+.recuperar-form h2{
+    font-size: 2.2rem;
+    color: var(--blueColor);
+    margin: 0 30px;
+}
+.recuperar-form div{
+    width: fit-content;
+    height: fit-content;
+    margin: -50px 30px 0 30px;
+}
+.recuperar-form .enabled{
+    width: fit-content;
+    height: fit-content;
+    color: var(--blueColor);
+    font-size: 1.3rem;
+    border-bottom: 2px solid var(--blueColor);
+}
+@media (pointer: fine){
+    .recuperar-form .enabled:hover{
+        transition: all 0.2s;
+        color: var(--redColor);
+        border-bottom: 2px solid var(--redColor);
+        cursor: pointer;
+    }
+}
+.recuperar-form .disabled{
+    width: fit-content;
+    height: fit-content;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.3rem;
+}
+.recuperar-form label{
+    width: calc(100% - 60px);
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    margin: 0 30px;
+    gap: 5px;
+}
+.recuperar-form label input{
+    width: 100%;
+    height: fit-content;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+.recuperar-form label img{
+    width: 27px;
+}
+.recuperar-form label img:nth-last-child(1){
+    cursor: pointer;
+}
+.recuperar-form small{
+    width: fit-content;
+    height: fit-content;
+    font-size: 0.9rem;
+    color: var(--redColor);
+    margin: -60px 30px 0 30px;
+}
+.recuperar-form button{
+    width: 100%;
+    color: white;
+    background-color: var(--blueColor);
+    padding: 15px 12px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+@media (pointer: fine){
+    .recuperar-form button:hover{
+        transition: all 0.2s;
+        background-color: var(--redColor);
+        cursor: pointer;
+    }
+}
+/*------------------------------------------------------------------*/
+.overlay{
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+}
+.loading{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    max-height: 300px;
+    width: 90vw;
+    height: 40vh;
+    border-radius: 10px;
+}
+/*------------------------------------------------------------------*/
+@media only screen and (max-width: 992px) {
+    .login-form{
+        width: 90%;
+    }
+    .login-form input{
+        font-size: 1.2rem;
+    }
+    .login-form label{
+        font-size: 1.1rem;
+    }
+    .recuperar-form{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .login-form button{
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 7px 0;
+        border-radius: 5px;
+    }
+}

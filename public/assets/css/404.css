@@ -1,0 +1,44 @@
+._404{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+._404 section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 14% 10px;
+    background-color: white ;
+}
+._404 img{
+    width: 100px;
+}
+._404 h2{
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+._404 a{
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    background-color: var(--blueColor);
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+@media (pointer: fine){
+    ._404 a:hover{
+        transition: all 0.2s;
+        background-color: var(--redColor);
+        cursor: pointer;
+    }
+}

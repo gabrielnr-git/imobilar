@@ -1,0 +1,7 @@
+username: user
+pwd: user
+email: user-email@gmail.com
+
+username: admin
+pwd: admin
+email: admin-email@gmail.com

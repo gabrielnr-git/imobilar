@@ -1,0 +1,524 @@
+main{
+    width: 100%;
+    display: flex;
+    gap: 3%;
+    margin-bottom: 50px;
+}
+.filtro{
+    width: fit-content;
+    min-width: 25%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.3rem;
+    padding: 5px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+.filtro h1{
+    font-size: 1.6rem;
+    color: #154360;
+    padding: 0 10px;
+}
+.filtro_h1_1{
+    display: unset;
+}
+.filtro_h1_2{
+    display: none;
+    text-align: center;
+}
+.filtro div{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.filtro section{
+    border-top: 2px solid rgba(21, 67, 96, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+.filtro section p{
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 5px 10px;
+    color: rgba(21, 67, 96, 0.8);
+}
+.filtro label{
+    font-size: 1.3rem;
+}
+.filtro_endereco,.filtro_preco,.filtro_interior{
+    gap: 3px;
+}
+.filtro_endereco .label_endereco{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.filtro input[type=text],.filtro input[type=number],.filtro select{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.65);
+    padding: 5px 0;
+    margin-bottom: 20px;
+}
+@media (pointer: fine){
+    .filtro input[type=text]:hover,.filtro input[type=number]:hover,.filtro select:hover{
+        transition: all 0.2s;
+        border-bottom: 2px solid rgba(192, 57, 43, 0.5);
+    }
+}
+.filtro input[type=text]:focus,.filtro input[type=number]:focus,.filtro select:focus{
+    transition: all 0.2s;
+    border-bottom: 2px solid #c0392b;
+    color: rgba(0, 0, 0, 0.9);
+}
+.filtro_extras label{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.filtro_categoria label,.filtro_extras label{
+    width: fit-content;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 100px;
+    padding: 5px 13px;
+    user-select: none;
+}
+@media (pointer: fine){
+    .filtro_categoria label:hover,.filtro_extras label:hover{
+        cursor: pointer;
+        border-color: rgba(21, 67, 96, 0.5);
+        color: rgba(21, 67, 96, 0.5);
+    }
+}
+.filtro_categoria,.filtro_extras{
+    gap: 1px;
+}
+.filtro_extras img{
+    width: 25px;
+    height: auto;
+}
+.filtro_categoria input:checked + label,.filtro_extras input:checked + label{
+    border-color: #154360;
+    color: #154360;
+}
+.filtro_errors{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    bottom: 20px;
+    color: red;
+    font-size: 1rem;
+}
+
+/* 2nd Half */
+.moradias{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    filter: none;
+    transition: filter 0.2s ease-in-out;
+}
+.moradias-overlay{
+    display: none;
+    width: 0px;
+    height: 0px;
+    margin: 0 -1.5%;
+    padding: 0;
+    gap: 0;
+}
+.moradias-overlay-area{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 77%;
+    border-radius: 10px;
+    background-color: transparent;
+    z-index: 5;
+}
+.moradias-overlay button{
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    background-color: var(--blueColor);
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    text-align: center;
+}
+@media (pointer: fine){
+    .moradias-overlay button:hover{
+        transition: all 0.2s;
+        background-color: var(--redColor);
+        cursor: pointer;
+    }
+}
+.item_lista{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.1);
+}
+.casa_img{
+    width: 500px;
+    height: 240px;
+}
+.casa_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.casa_info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 15px;
+    padding: 10px;
+}
+.casa_info p{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.casa_info p:nth-last-child(3){
+    width: calc(100% - 285px);
+    white-space: nowrap;
+}
+.casa_info h2{
+    font-size: 1.5rem;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.casa_info p img{
+    width: 23px;
+    height: auto;
+}
+.casa_detalhes{
+    display: flex;
+    gap: 10px;
+}
+.casa_detalhes_extras{
+    width: fit-content;
+    height: fit-content;
+    align-self: flex-end;
+    display: flex;
+    gap: 7px;
+    margin: 2% 0;
+}
+.casa_detalhes_preco{
+    display: flex;
+    flex-direction: column;
+}
+.casa_detalhes_preco a{
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    background-color: #154360;
+    padding: 8px 12px;
+    border-radius: 100px;
+}
+@media (pointer: fine){
+    .casa_detalhes_preco a:hover{
+        transition: all 0.2s;
+        background-color: #c0392b;
+        cursor: pointer;
+    }
+}
+.img_favorito{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 10px 10px 0 0;
+    width: 20px;
+    height: auto;
+    user-select: none;
+}
+@media (pointer: fine){
+    .img_favorito:hover{
+        cursor: pointer;
+        user-select: none;
+        background-image: var(--favorito_img);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.dhave {
+    position: fixed;
+    width: 67%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 100px 10px;
+    background-color: white;
+    color: var(--blueColor);
+    border-radius: 10px;
+}
+.dhave img{
+    width: 100px;
+}
+.dhave h1 {
+    text-align: center;
+    font-size: 1.3rem;
+}
+.dhave a,.dhave button{
+    width: fit-content;
+    text-align: center;
+    color: white;
+    background-color: #154360;
+    padding: 7px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+.dhave button{
+    display: none;
+}
+
+@media (pointer: fine){
+    .dhave a:hover,.dhave button:hover{
+        cursor: pointer;
+        transition: all 0.3s;
+        background-color: #c0392b;
+    }
+}
+body:after{
+    position:absolute;
+    width:0;
+    height:0;
+    overflow:hidden;
+    z-index:-1;
+    content:var(--load_wifi_img)
+            var(--load_dinner_img)
+            var(--load_leisure_img)
+            var(--load_parking_img)
+            var(--load_animals_img)
+            var(--load_favorite_img);
+}
+
+/* Break Points: 600px 601px 768px 992px 1200px */
+
+@media screen and (max-width: 1200px) {
+    main{
+        flex-direction: column;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+    }
+    .filtro{
+        width: 100%;
+        padding: 0;
+    }
+    .filtro section{
+        padding: 10px 0;
+    }
+    .filtro h1{
+        margin: 10px 0 0 0;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    @media (pointer: fine){
+        .filtro h1:hover{
+            transition: all 0.3s;
+            color: #c0392b;
+        }
+    }
+    .filtro_h1_1{
+        display: none;
+    }
+    .filtro_h1_2{
+        display: unset;
+        user-select: none;
+    }
+    .filtro_form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-height: 0px;
+        height: fit-content;
+        opacity: 0;
+        visibility: hidden;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+    .filtro_form section:nth-last-child(4){
+        order: 3;
+    }
+    .filtro_form section:nth-last-child(1){
+        order: 4;
+    }
+    .moradias-overlay-area{
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: fit-content;
+        border-radius: 0;
+    }
+    .moradias-overlay-area button{
+        width: 100%;
+        padding: 15px 0;
+        border-radius: 0;
+    }
+    .casa_info p,.casa_info h2{
+        white-space: nowrap;
+    }
+    .dhave{
+        position: unset;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header{
+        display: none;
+    }
+    .moradias{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px 0;
+        justify-content: space-between;
+    }
+    .item_lista{
+        flex-direction: column;
+        width: 48%;
+        height: fit-content;
+    }
+    .item_lista .casa_img{ 
+        width: 100%;
+        height: 200px;
+    }
+    .casa_img img{
+        border-bottom-left-radius: unset;
+        border-top-right-radius: 10px;
+    }
+    .casa_info{
+        width: 100%;
+        height: 100%;
+    }
+    .casa_info p{
+        min-width: 100%;
+    }
+    .casa_detalhes{
+        width: 100%;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .casa_detalhes_preco{
+        gap: 10px 0;
+    }
+    .casa_detalhes_preco p{ 
+        font-size: 1.2rem;
+    }
+    .casa_detalhes_extras img{
+        width: auto;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .moradias{
+        justify-content: center;
+    }
+    .filtro section{
+        width: 50%;
+    }
+    .filtro_form section:nth-child(1),.filtro_form section:nth-child(2),.filtro_form section:nth-last-child(1){
+        width: 100%;
+    }
+    .casa_info h2{
+        font-size: 1.4rem;
+    }
+    .item_lista{
+        width: 90%;
+    }
+    .item_lista .casa_img{ 
+        height: 230px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 765px) {
+    .casa_info h2{
+        font-size: 1.4rem;
+    }
+    .casa_info p{
+        font-size: 0.9rem;
+    }
+    .casa_detalhes_preco p{ 
+        font-size: 1.1rem;
+    }
+    .casa_detalhes{
+        flex-direction: column;
+    }
+    .casa_detalhes_extras{
+        align-self: flex-start;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1200px){
+    .filtro_form section{
+        width: 33%;
+        order: 1;
+    }
+    .filtro_form section:nth-last-child(3){
+        border-left: 2px solid rgba(21, 67, 96, 0.3);
+        border-right: 2px solid rgba(21, 67, 96, 0.3);
+    }
+    .filtro_form section:nth-last-child(1),.filtro_form section:nth-last-child(4){
+        border-top: 2px solid rgba(21, 67, 96, 0.3);
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .moradias{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .item_lista .casa_img{
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .casa_info{
+        justify-content: center;
+    }
+    .casa_info p{
+        font-size: 1rem;
+    }
+    .casa_detalhes{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 0 10px 7px 0;
+    }
+    .casa_detalhes_preco{
+        gap: 7px;
+        align-items: center;
+    }
+    .casa_detalhes_preco p{ 
+        font-size: 1.3rem;
+    }
+    .casa_detalhes_extras img{
+        width: auto;
+        height: 22px;
+    }
+}

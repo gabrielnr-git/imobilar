@@ -1,0 +1,335 @@
+.moradia{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 20px;
+}
+.detalhes1{
+    width: 65%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1.25rem;
+}
+.detalhes1-images{
+    position: relative;
+    width: 100%;
+    height: 75vmin;
+    min-height: 250px;
+    border: 2px solid var(--blueColor);
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.1);
+}
+.detalhes1-images-items{
+    width: 100%;
+    height: 100%;  
+    object-fit: cover;
+}
+.detalhes1-images-buttons{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: var(--blueColor);
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+    user-select: none;
+}
+.detalhes1-images-buttons:nth-child(1){
+    left: 0;
+}
+.detalhes1-images-buttons img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    user-select: none;
+}
+@media (pointer: fine) {
+    .detalhes1-images-buttons:hover{
+        background-color: var(--redColor);
+    }
+}
+.detalhes1-vendedor{
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.1);
+}
+.detalhes1-vendedor-title{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.detalhes1-vendedor-title h1{
+    color: var(--blueColor);
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.6rem;
+}
+.detalhes1-vendedor-contato{
+    width: 100%;
+    height: fit-content;
+    padding: 15px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+.detalhes1-vendedor-contato img, .detalhes1-vendedor-comentario img,.detalhes2-vendedor-comentario img{
+    width: 23px;
+    height: auto;
+    margin-right: 7px;
+}
+.detalhes1-vendedor-contato p{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: fit-content;
+}
+.detalhes1-vendedor-contato a{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: underline solid black 2px;
+    transition: all 0.2s ease-in-out;
+}
+@media (pointer: fine) {
+    .detalhes1-vendedor-contato a:hover{
+        text-decoration: underline solid var(--redColor) 2px;
+        color: var(--redColor);
+    }
+}
+.detalhes1-vendedor-comentario p,.detalhes2-vendedor-comentario p{
+    display: flex;
+    align-items: center;
+    color: var(--blueColor);
+}
+.detalhes1-vendedor-comentario, .detalhes2-vendedor-comentario{
+    width: 100%;
+    height: fit-content;
+    padding: 10px; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.detalhes1-vendedor-comentario span{
+    border: 2px solid var(--blueColor);
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 100%;
+    height: fit-content;
+    min-height: 187px;
+    word-wrap: normal;
+    font-size: 1.15rem;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.9);
+    white-space: pre-line;
+}
+.detalhes2{
+    width: 35%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+}
+.detalhes2 img{
+    width: 25px;
+    height: auto;
+    margin-right: 7px;
+}
+.detalhes2-preco{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 1.7rem;
+}
+.detalhes2-info{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+.detalhes2-info p{
+    color: var(--blueColor);
+    display: flex;
+    align-items: center;
+}
+.detalhes2-info span{
+    background-color: #F5F5F5;
+    border: 1px solid #d4d4d4;
+    border-radius: 7px;
+    padding: 5px;
+    font-size: 1.15rem;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 30px;
+}
+.extras{
+    display: flex;
+    flex-direction: column;
+    gap: 7px 0;
+    margin: 7px 10px;
+}
+.extras p{
+    color: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    padding: 5px 10px;
+    width: fit-content;
+}
+.extras .active{
+    color: var(--blueColor);
+    border: 2px solid var(--blueColor);
+}
+.detalhes2-control{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blueColor);
+    color: white;
+    font-size: 1.3rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.detalhes2-control a,.detalhes2-control button{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    padding: 15px 0;
+    cursor: pointer;
+    border-top: 2px solid white;
+}
+@media (pointer: fine) {
+    .detalhes2-control a:hover,.detalhes2-control button:hover{
+        transition: all 0.2s ease-in-out;
+        background-color: var(--redColor);
+    }
+    .detalhes2-control a:nth-last-child(1):hover,.detalhes2-control button:nth-last-child(1):hover{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+#reset-span{
+    background-color: unset;
+    border: unset;
+    color: black;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    font-size: 1.3rem;
+    line-height: unset;
+}
+.moradia-dhave{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 14% 10px;
+    background-color: white ;
+}
+.moradia-dhave img{
+    width: 100px;
+}
+.moradia-dhave h2{
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+.moradia-dhave a{
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    background-color: var(--blueColor);
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+@media (pointer: fine){
+    .moradia-dhave a:hover{
+        transition: all 0.2s;
+        background-color: var(--redColor);
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .moradia{
+        flex-direction: column;
+    }
+    .detalhes1,.detalhes2{
+        width: 100%;
+    }
+    .detalhes1-vendedor-contato{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .detalhes1-vendedor-contato p {
+        width: 100%;
+    }
+    .detalhes1-vendedor-comentario{
+        display: none;
+    }
+    .detalhes2-vendedor-comentario{
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .detalhes1,
+    .detalhes1-vendedor-comentario span{
+        font-size: 1.1rem;
+    }
+    .detalhes2{
+        font-size: 1.2rem;
+    }
+    .detalhes2-info span
+    {
+        font-size: 1rem;
+    }
+    .extras{
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .detalhes1-img{
+        height: 350px;
+    }
+    .detalhes1-vendedor-contato{    
+        flex-direction: column;
+    }
+    .detalhes1-vendedor-contato p{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .detalhes1-img{
+        height: 275px;
+    }
+}

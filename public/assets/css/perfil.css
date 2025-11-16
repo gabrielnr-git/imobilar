@@ -1,0 +1,288 @@
+.user{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5vh;
+    font-size: 1.4rem;
+}
+.user small{
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem;
+    color: red;
+}
+.user_pfp{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 50px 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+.user_pfp_img_border{
+    width: 150px;
+    height:150px;
+    padding: 3px;
+    border-radius: 1000px;
+    border: 2px solid #154360;  
+}
+.user_pfp_img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1000px;
+    object-fit: cover;
+}
+.user_pfp p{
+    font-size: 1.7rem;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+.user_pfp input{
+    display: none;
+}
+.edit_pfp_img_border{
+    cursor: pointer;
+    width: 150px;
+    height:150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    border-radius: 1000px;
+    border: 2px solid #154360;  
+}
+.edit_pfp_img{
+    display: none;
+    width: 100px;
+    height: auto;
+}
+@media (pointer: fine) {
+    .edit_pfp_img_border:hover{
+        background-color: var(--blueColor);
+    }
+    .edit_pfp_img_border:hover .user_pfp_img{
+        display: none;
+    }
+    .edit_pfp_img_border:hover .edit_pfp_img{
+        display: flex;
+    }
+}
+.user_info {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+}
+.user_dados,.user_contato{
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+}
+.user_dados{
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.user_contato{
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+.user_dados h2,.user_contato h2{
+    color: #154360;
+    font-size: 1.6rem;
+}
+.user_dados p,.user_contato p{
+    font-weight: 700;
+}
+.user_dados span,.user_contato span{
+    font-weight: normal;
+}
+.user_dados div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.user_info input,#reset .input_pwd{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+.user-buttons{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
+}
+.user-buttons a,.user-buttons button{
+    width: fit-content;
+    text-align: center;
+    color: white;
+    background-color: #154360;
+    padding: 7px 20px;
+    border-radius: 5px;
+}
+
+@media (pointer: fine){
+    .user-buttons a:hover,.user-buttons button:hover{
+        cursor: pointer;
+        transition: all 0.3s;
+        background-color: #c0392b;
+    }
+}
+.user-dhave{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 14% 10px;
+    background-color: white ;
+}
+.user-dhave img{
+    width: 100px;
+}
+.user-dhave h2{
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+.user-dhave a{
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    background-color: var(--blueColor);
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+@media (pointer: fine){
+    .user-dhave a:hover{
+        transition: all 0.2s;
+        background-color: var(--redColor);
+        cursor: pointer;
+    }
+}
+
+#reset{
+    background-color: unset;
+    box-shadow: unset;
+    justify-content: center;
+    align-items: center;
+}
+.reset_data{
+    width: 35%;
+    background-color: white;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+#reset .input_pwd{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#reset .input_pwd input{
+    width: 100%;
+    height: 100%;
+    padding: 0 10px 0 0;
+}
+#reset .input_pwd img{
+    cursor: pointer;
+    width: 30px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.reset_data h2{
+    color: var(--blueColor);
+    font-size: 1.8rem;
+    margin: 0 0 10px 0;
+}
+.reset_data button{
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .user{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .user_info{
+        flex-direction: column;
+        font-size: 1.35rem;
+    }
+    .user_dados,.user_contato{
+        width: 100%;
+        border: unset;
+        gap: 25px;
+        padding: 10px 10px 15px 10px;
+    }
+    .user_contato{
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    .user_dados{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    .user_dados h2{
+        font-size: 1.7rem;
+    }
+    .user_dados div{
+        flex-direction: column;
+        width: fit-content;
+        align-items: center;
+        gap: 20px;
+    }
+    .user_dados a{
+        margin: unset;
+        width: 100%;
+    }
+    .reset_data{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .user_dados h2{
+        font-size: 1.65rem;
+    }
+    .user_dados,.user_contato{
+        padding: 13px;
+    }
+    .user_dados p,.user_contato p{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 1.4rem;
+    }
+    .user_dados span,.user_contato span{
+        background-color: rgba(0, 0, 0, 0.1);
+        padding: 10px 15px;
+        border-radius: 100px;
+        font-size: 1.2rem;
+    }
+}

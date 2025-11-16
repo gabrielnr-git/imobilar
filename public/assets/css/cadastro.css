@@ -1,0 +1,144 @@
+.register{
+    width: 100vw;
+    height: fit-content;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 35px;
+    font-size: 1.4rem;
+}
+.register-form{
+    width: 35%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px 30px 30px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.1);
+}
+.register-form .message{
+    position: absolute;
+    align-self: center;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+.register-form h2{
+    font-size: 2.6rem;
+    color: var(--blueColor);
+    margin: 70px 0;
+}
+.register-form section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+}
+.register-form section div{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.register-form section small{
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+    color: red;
+}
+#pwd_img_register{
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    height: 30px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 5px;
+    user-select: none;
+}
+.register-form section input{
+    width: 100%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    padding: 7px 3px 7px 28px;
+}
+.register-form section input:focus{
+    border-bottom: 2px solid #0060DF;
+}
+.register-form button{
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.5rem;
+    background-color: var(--blueColor);
+    color: white;
+    padding: 7px 30px;
+    border-radius: 100px;
+    margin-top: 40px;
+}
+@media (pointer: fine){
+    .register-form button:hover{
+        cursor: pointer;
+        transition: all 0.2s;
+        background-color: var(--redColor);
+    }
+}
+.input_username{
+    background-image: var(--user_input_img);
+}
+.input_email{
+    background-image: var(--email_input_img);
+}
+.input_password{
+    background-image: var(--pwd_input_img);
+}
+.input_username,.input_email,.input_password{
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: left;
+}
+#input_password_register{
+    padding: 7px 40px 7px 28px;
+}
+.register-form p{
+    font-size: 1rem;
+    margin: 20px 0;
+}
+.register-form p a{
+    cursor: pointer;
+    color: var(--blueColor);
+    border-bottom: 2px solid var(--blueColor);
+    user-select: none;
+}
+@media (pointer: fine){
+    .register-form p a:hover{
+        transition: all 0.2s;
+        color: var(--redColor);
+        border-bottom: 2px solid var(--redColor);
+    }
+}   
+
+/* Scrollbar */
+body::-webkit-scrollbar{
+    display: none;
+}
+@media only screen and (max-width: 992px) {
+    .register-form{
+        width: 90%;
+    }
+    .register-form input{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .register-form button{
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 7px 0;
+        border-radius: 5px;
+    }
+}
