@@ -1,22 +1,23 @@
 # Imobilar
 
 ## Sobre o projeto
-Este projeto foi desenvolvido em 2023 como Trabalho de Conclusão de Curso (TCC) do Ensino Médio Técnico em Informática.
+Este projeto foi desenvolvido em 2023 como Trabalho de Conclusão de Curso (TCC) do Ensino Médio Técnico em Informática para a escola "Centro de Educação Profissional Tancredo Neves" em Brazópolis, Minas Gerais.
 Ele consiste em um website que facilita a busca de moradias estudantis próximas a instituições de ensino.
 
 ## Descrição geral
-Este projeto foi desenvolvido como Trabalho de Conclusão de Curso (TCC) do Ensino Médio Técnico em Informática. O objetivo do sistema é auxiliar estudantes na busca de moradias próximas a instituições de ensino, oferecendo uma plataforma simples para cadastro, login e consulta de imóveis. O foco principal do desenvolvimento foi o back-end em PHP, responsável por toda parte lógica e interação com o banco de dados.
-Em relação a estrutura, o projeto segue o padrão MVC, separando os componentes em Model, View e Controller para melhorar organização e manutenção. O sistema também utiliza roteamento de URL para direcionar cada requisição ao controlador adequado.
+O sistema foi desenvolvido para auxiliar estudantes na busca de moradias próximas a instituições de ensino, oferecendo uma plataforma simples para cadastro, login e consulta de imóveis. O foco principal do desenvolvimento foi o back-end em PHP, responsável por toda parte lógica e interação com o banco de dados.
+
+Em relação a estrutura, o projeto segue o padrão MVC, separando os componentes em Model, View e Controller para melhorar a organização e manutenção. O sistema também utiliza roteamento de URL para direcionar cada requisição ao controlador adequado.
 
 ## Funcionalidades principais
 O sistema oferece as seguintes funcionalidades principais:
-- Cadastro e Login de usuários: criação de conta, autenticação e gerenciamento de acessos.
-- Verificação de e-mail via código: envio automatizado de código de confirmação para validar novas contas.
-- Lista de moradias: exibição de imóveis cadastrados com informações essenciais para consulta.
-- Área de administração: gerenciamento de usuários, publicações e dados gerais do sistema.
-- Perfil do usuário: visualização e edição de informações pessoais.
-- Salvar publicações: possibilidade de favoritar moradias para consulta posterior.
-- Sistema de notificações: alertas e mensagens relacionados às ações do usuário.
+- **Cadastro e Login de usuários**: criação de conta, autenticação e gerenciamento de acessos.
+- **Verificação de e-mail via código**: envio automatizado de código de confirmação para validar novas contas.
+- **Lista de moradias**: exibição de imóveis cadastrados com informações essenciais para consulta.
+- **Área de administração**: gerenciamento de usuários, publicações e dados gerais do sistema.
+- **Perfil do usuário**: visualização e edição de informações pessoais.
+- **Salvar publicações**: possibilidade de favoritar moradias para consulta posterior.
+- **Sistema de notificações**: alertas e mensagens relacionados às ações do usuário.
 
 ## Como rodar o projeto localmente
 1. Clone o repositório.
@@ -26,6 +27,7 @@ O sistema oferece as seguintes funcionalidades principais:
 5. Acessar no navegador.
 6. Para criar contas, configure um e-mail para envio de código (explicado a seguir).
 7. O sistema inclui dois logins para facilitar o teste do projeto:
+
 Usuário Comum:
 ```
 username: user
@@ -53,7 +55,7 @@ define("SMTPPORT",465);
 3. Após configurar, o sistema estará apto a enviar o código de verificação para novos usuários.
 
 ## Capturas de Tela
-Abaixo estão algumas telas que demonstram o funcionamento do sistema, tanto para usuários comuns quanto para administradores.
+Abaixo estão algumas capturas de tela que demonstram o funcionamento do sistema, tanto para usuários comuns quanto para administradores.
 ### Página Inicial
 !["Página inicial"](screenshots/front-page.png")
 
@@ -101,9 +103,12 @@ Abaixo estão algumas telas que demonstram o funcionamento do sistema, tanto par
 ### Painel do Administrador
 !["Página do painel do administrador"](screenshots/admin-page.png")
 
+---
+
 ## Autores
 **[Gabriel Nunes Rego](https://github.com/gabrielnr-git)**  
-Responsável pelo desenvolvimento completo do sistema, incluindo arquitetura MVC, implementação de funcionalidades, banco de dados e lógica back-end/front-end.
+Responsável pelo desenvolvimento completo do sistema, incluindo arquitetura, implementação de funcionalidades, banco de dados e lógica back-end/front-end.
 
 **Lucas Lopis Fonseca**  
-Responsável pela documentação do projeto original (TCC), incluindo requisitos, especificação técnica e descrição funcional.
+Responsável pela documentação do projeto original (TCC), incluindo plano de negócios, especificação técnica e descrição funcional.
+
