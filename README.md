@@ -70,6 +70,11 @@ Abaixo estão algumas capturas de tela que demonstram o funcionamento do sistema
 
 ---
 
+### Código por e-mail
+![Página do perfil do usuário](screenshots/email-example.png)
+
+---
+
 ### Perfil do Usuário
 ![Página do perfil do usuário](screenshots/profile.png)
 
@@ -112,6 +117,7 @@ Responsável pelo desenvolvimento completo do sistema, incluindo arquitetura, im
 
 **Lucas Lopis Fonseca**  
 Responsável pela documentação do projeto original (TCC), incluindo plano de negócios, especificação técnica e descrição funcional.
+
 
 
 
